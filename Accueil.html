@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/b.css') }}">
+    <title></title>
+</head>
+
+<nav class="navbar">
+    <div class="logo">
+        <a href="#">MonLogo</a>
+    </div>
+    <ul class="nav-links">
+        <li><a href="http://127.0.0.1:8000/#">Accueil</a></li>
+        <li><a href="http://127.0.0.1:8000/connexion">Connexion</a></li>
+        <li><a href="http://127.0.0.1:8000/donation">Donation</a></li>
+        <li><a href="/home/yvanoide/iadev-python/testons/templates/a_propos.html">A_Propos</a></li>
+    </ul>
+</nav>
+
+<body>
+    <header>
+        <h1>Union</h1>
+        <p>La guerre a détruit des familles, mais nous ne les laisserons pas les séparer. Nous allons retrouver vos proches, quoi qu'il en coûte. Nous allons vous réunir et reconstruire vos vies. Vous n’êtes pas perdus, Vous n’êtes pas seuls. Nous sommes une grande famille, et nous nous retrouverons. </p>
+    </header>
+    
+    <main>
+        <section class="objectives">
+            <h2>Faire Un Don</h2>
+            <p>Notre projet a pour but d'aider les familles séparées par la guerre à se retrouver. Nous collectons des informations sur les familles séparées et nous créons une base de données pour les stocker. Nous mettons également en place une cagnotte pour aider les familles pauvres à se retrouver. Nous espérons que notre projet permettra aux familles séparées de se retrouver et de reconstruire leur vie. </p>
+        <section class="donate-button">
+            <a href="{{ url_for('donation') }}" class="btn">Faire une promesse de don</a>
+
+        <section class="new-section">
+
+
+
+            
+        </section>
+        <section class="missions">
+            <h2>Missions</h2>
+            <p>Nous organisons des missions humanitaires en Ukraine, en Russie et dans les pays baltes pour aider les familles touchées par les conflits à se retrouver et à reconstruire leur vie. Nos équipes sur le terrain travaillent avec dévouement pour localiser les proches séparés et leur fournir le soutien nécessaire.</p>
+            <p>Si vous souhaitez vous impliquer dans nos missions ou en savoir plus sur nos actions dans ces régions, veuillez nous contacter via notre formulaire de contact.</p>
+        </section>
+
+            
+        <section class="connect-button">
+            <h2>Connexion</h2>
+            <a href="/connexion" class="btn">Connexion</a>
+        </section>
+
+        <section class="temoignages">
+            <h2>Témoignages</h2>
+            <p>Voici ce que nos bénéficiaires ont à dire sur notre action :</p>
+            <blockquote>
+                <p>"Grâce à l'Union, j'ai pu retrouver ma sœur après des années de séparation. Je suis tellement reconnaissant pour leur aide et leur soutien."</p>
+                <cite>John Doe</cite>
+            </blockquote>
+            <blockquote>
+                <p>"Je ne pensais jamais revoir ma famille. Merci à l'Union de nous avoir réunis à nouveau. Vous avez changé ma vie."</p>
+                <cite>Jane Smith</cite>
+            </blockquote>
+            <a href="/a_propos">A propos</a>
+
+        </section>
+    </main>
+    <footer>
+        <p>Copyright &copy; Union</p>
+    </footer>
+</body>
+</html>

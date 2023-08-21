@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='/b.css') }}">
+    <title>Union</title>
+</head>
+<body>
+    <header>
+        <h1>Faire une Promesse de Don</h1>
+        <p>Merci de soutenir notre cause en faisant une promesse de don. Remplissez le formulaire ci-dessous :</p>
+    </header>
+    <main>
+        <form action="{{ url_for('donation') }}" method="post" class="donation-form">
+            <div class="form-group">
+                <label for="nom">Nom :</label>
+                <input type="text" name="nom" id="nom" required>
+            </div>
+            <div class="form-group">
+                <label for="prenom">Prénom :</label>
+                <input type="text" name="prenom" id="prenom" required>
+            </div>
+            <div class="form-group">
+                <label for="adresse">Adresse :</label>
+                <input type="text" name="adresse" id="adresse" required>
+            </div>
+            <div class="form-group">
+                <label for="email">E-mail :</label>
+                <input type="email" name="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="somme_promise">Somme promise (en euros) :</label>
+                <select name="somme_promise" id="somme_promise" required>
+                    <option value="35">35€ - Je donne une fois</option>
+                    <option value="55">55€ - Je donne une fois</option>
+                    <option value="95">95€ - Je donne une fois</option>
+                    <option value="other">Autre montant</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="conditions" id="conditions" required>
+                <label for="conditions">Je confirme avoir pris connaissance des conditions de don.</label>
+            </div>
+            <div class="form-group">
+                <button type="submit" class="btn">Soumettre la Promesse de Don</button>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <p>Ensemble, nous sommes inarrêtables. Merci pour votre engagement à nos côtés !</p>
+    </footer>
+</body>
+</html>
